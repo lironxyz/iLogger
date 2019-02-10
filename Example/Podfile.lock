@@ -1,0 +1,16 @@
+PODS:
+  - iLogger (0.1.0)
+
+DEPENDENCIES:
+  - iLogger (from `../`)
+
+EXTERNAL SOURCES:
+  iLogger:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  iLogger: df1e9a5a5ca3662738065e477cfe8cf77b49e771
+
+PODFILE CHECKSUM: 4b07be51ee53a2fe6beeec474bcbc5072f432800
+
+COCOAPODS: 1.6.0

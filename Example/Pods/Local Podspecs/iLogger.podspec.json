@@ -1,0 +1,22 @@
+{
+  "name": "iLogger",
+  "version": "0.1.0",
+  "summary": "A short description of iLogger.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Liron Yehoshua/iLogger",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Liron Yehoshua": "lironxyz@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Liron Yehoshua/iLogger.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "iLogger/Classes/**/*"
+}

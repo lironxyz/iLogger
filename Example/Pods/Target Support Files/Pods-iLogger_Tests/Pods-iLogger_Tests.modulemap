@@ -1,0 +1,6 @@
+framework module Pods_iLogger_Tests {
+  umbrella header "Pods-iLogger_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
