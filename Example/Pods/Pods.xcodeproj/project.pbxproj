@@ -12,9 +12,9 @@
 		62CCA2C83405C4C5D9E294312672351C /* Pods-iLogger_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E30EC4ED10C9A459483A1B9D84A328B /* Pods-iLogger_Example-dummy.m */; };
 		6661D506086E1778FA8C61985AA4014F /* iLogger-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D53297098E25EB68565911714F3D77 /* iLogger-dummy.m */; };
 		941C3EA3452B1A2382FDC1B2BAA4E6B8 /* iLogger-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A575055717F9923C01F1C32037FA3CC1 /* iLogger-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		993DD9FC2216844500912C9F /* ILLoger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993DD9FB2216844500912C9F /* ILLoger.swift */; };
 		9985E825939B6759E9E3CDFC747DEE4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		BCFC898C18F5BEECABBAC9BA3F3BB818 /* Pods-iLogger_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 931ACE786C805B85498369E35F403D20 /* Pods-iLogger_Tests-dummy.m */; };
-		C2201A8555262486EABA202DA28E1884 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6FBDD843F39D8722624754D2FE4CEE /* ReplaceMe.swift */; };
 		C90A2CA95B8078F5CF713F5E5C757D2D /* Pods-iLogger_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EB677EE0032A61FD9DC73922B0271E0 /* Pods-iLogger_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F6BB8F3BE613FC6C7152930B6096234F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -38,24 +38,24 @@
 
 /* Begin PBXFileReference section */
 		08E86DC7DED55C8CAAC73F39430FD782 /* Pods-iLogger_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iLogger_Example-umbrella.h"; sourceTree = "<group>"; };
-		0CF16EA3F29A07724E8F3C63F94E5FC0 /* Pods_iLogger_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_iLogger_Example.framework; path = "Pods-iLogger_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CF16EA3F29A07724E8F3C63F94E5FC0 /* Pods_iLogger_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iLogger_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		185890EBE01AE0D307FF51300BB9B5C2 /* Pods-iLogger_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iLogger_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		1EB677EE0032A61FD9DC73922B0271E0 /* Pods-iLogger_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iLogger_Tests-umbrella.h"; sourceTree = "<group>"; };
-		34E5CA90EF2947367FD19B2CBCF2463B /* Pods_iLogger_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_iLogger_Tests.framework; path = "Pods-iLogger_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		40380C3DA96D231987837E41E6DB2297 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		34E5CA90EF2947367FD19B2CBCF2463B /* Pods_iLogger_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iLogger_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40380C3DA96D231987837E41E6DB2297 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4E30EC4ED10C9A459483A1B9D84A328B /* Pods-iLogger_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iLogger_Example-dummy.m"; sourceTree = "<group>"; };
-		5E6FBDD843F39D8722624754D2FE4CEE /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = iLogger/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		6585B3D1437F04436090AF155DE309D1 /* iLogger-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iLogger-prefix.pch"; sourceTree = "<group>"; };
-		66247B5C7E552F059C03A150040A60D7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		66247B5C7E552F059C03A150040A60D7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		6662B6EF48DDFB4539EEFC64F3E9B7E4 /* Pods-iLogger_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iLogger_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		688A5419D1EECA47AB15E0E918A813F9 /* iLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = iLogger.framework; path = iLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		688A5419D1EECA47AB15E0E918A813F9 /* iLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		735C90DC3A26DB2008131BA9F0A23619 /* iLogger.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = iLogger.modulemap; sourceTree = "<group>"; };
 		74B09302AEE8C89ED0D8BC4D70A224EA /* iLogger.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iLogger.xcconfig; sourceTree = "<group>"; };
 		74F7FC785558806682F7AF900C15629A /* Pods-iLogger_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iLogger_Example-frameworks.sh"; sourceTree = "<group>"; };
 		783F9AFBF27EA8E1BD442840379D5490 /* Pods-iLogger_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iLogger_Example.release.xcconfig"; sourceTree = "<group>"; };
 		7F9C2D5ACEBF58DBC93DD2AEC2AAF844 /* Pods-iLogger_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iLogger_Tests-Info.plist"; sourceTree = "<group>"; };
 		931ACE786C805B85498369E35F403D20 /* Pods-iLogger_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iLogger_Tests-dummy.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		993DD9FB2216844500912C9F /* ILLoger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ILLoger.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A08ADF24A65CBECEE0E2FCB6F0D08194 /* Pods-iLogger_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iLogger_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A575055717F9923C01F1C32037FA3CC1 /* iLogger-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iLogger-umbrella.h"; sourceTree = "<group>"; };
 		A645C2111825342716B73F910A15C6E0 /* Pods-iLogger_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iLogger_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -68,7 +68,7 @@
 		F4D7755CD328E01882D9BCA7863BCFDE /* Pods-iLogger_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iLogger_Example-Info.plist"; sourceTree = "<group>"; };
 		F6D53297098E25EB68565911714F3D77 /* iLogger-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iLogger-dummy.m"; sourceTree = "<group>"; };
 		FE40A94A435CB064E3B333F9D03C1F1E /* Pods-iLogger_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-iLogger_Tests.modulemap"; sourceTree = "<group>"; };
-		FED2ADC819B784576145359A8D48335E /* iLogger.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = iLogger.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FED2ADC819B784576145359A8D48335E /* iLogger.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = iLogger.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,7 +145,7 @@
 		542F87F85C256A641515F61CFFC871F3 /* iLogger */ = {
 			isa = PBXGroup;
 			children = (
-				5E6FBDD843F39D8722624754D2FE4CEE /* ReplaceMe.swift */,
+				993DD9FB2216844500912C9F /* ILLoger.swift */,
 				904DAB719053F9C9C31872CF4BF3D930 /* Pod */,
 				BF4976DBFB7ECD09122B7233B5EB6A38 /* Support Files */,
 			);
@@ -373,7 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6661D506086E1778FA8C61985AA4014F /* iLogger-dummy.m in Sources */,
-				C2201A8555262486EABA202DA28E1884 /* ReplaceMe.swift in Sources */,
+				993DD9FC2216844500912C9F /* ILLoger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -717,8 +717,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
