@@ -11,20 +11,24 @@ public class ILLogger {
     
     public init() {}
     
+    func log(_ message: String) {
+        print(message)
+    }
+    
     public func debug(_ message: String) {
-        print("[DEBUG] " + message)
+        log("[DEBUG] " + message)
     }
     
     public func info(_ message: String) {
-        print("[INFO] " + message)
+        log("[INFO] " + message)
     }
     
     public func error(_ message: String) {
-        print("[ERROR] " + message)
+        log("[ERROR] " + message)
     }
     
     public func fatal(_ message: String) {
-        print("[FATAL] " + message)
+        log("[FATAL] " + message)
     }
     
 }
