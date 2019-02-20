@@ -9,10 +9,19 @@ import Foundation
 
 public class ILLogger {
     
-    public init() {}
+    // MARK - Properties
+    /// A flag indicates whether this logger enabled or not.
+    /// Default is 'true'.
+    var isEnabled: Bool
+    
+    public init() {
+        isEnabled = true
+    }
     
     func log(_ message: String) {
-        print(message)
+        if isEnabled {
+            print(message)
+        }
     }
     
     public func debug(_ message: String) {
