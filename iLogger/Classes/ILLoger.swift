@@ -24,12 +24,20 @@ public class ILLogger {
         }
     }
     
+    public func verbose(_ message: String) {
+        log("[VERBOSE] " + message)
+    }
+    
     public func debug(_ message: String) {
         log("[DEBUG] " + message)
     }
     
     public func info(_ message: String) {
         log("[INFO] " + message)
+    }
+    
+    public func warning(_ message: String) {
+        log("[WARNING] " + message)
     }
     
     public func error(_ message: String) {
