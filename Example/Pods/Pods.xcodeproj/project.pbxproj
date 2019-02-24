@@ -12,7 +12,8 @@
 		62CCA2C83405C4C5D9E294312672351C /* Pods-iLogger_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E30EC4ED10C9A459483A1B9D84A328B /* Pods-iLogger_Example-dummy.m */; };
 		6661D506086E1778FA8C61985AA4014F /* iLogger-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D53297098E25EB68565911714F3D77 /* iLogger-dummy.m */; };
 		941C3EA3452B1A2382FDC1B2BAA4E6B8 /* iLogger-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A575055717F9923C01F1C32037FA3CC1 /* iLogger-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		993DD9FC2216844500912C9F /* ILLoger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993DD9FB2216844500912C9F /* ILLoger.swift */; };
+		993DD9FC2216844500912C9F /* ILLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993DD9FB2216844500912C9F /* ILLogger.swift */; };
+		997079CF22232A7000587176 /* ILLogTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997079CE22232A7000587176 /* ILLogTag.swift */; };
 		9985E825939B6759E9E3CDFC747DEE4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		BCFC898C18F5BEECABBAC9BA3F3BB818 /* Pods-iLogger_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 931ACE786C805B85498369E35F403D20 /* Pods-iLogger_Tests-dummy.m */; };
 		C90A2CA95B8078F5CF713F5E5C757D2D /* Pods-iLogger_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EB677EE0032A61FD9DC73922B0271E0 /* Pods-iLogger_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -54,7 +55,8 @@
 		783F9AFBF27EA8E1BD442840379D5490 /* Pods-iLogger_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iLogger_Example.release.xcconfig"; sourceTree = "<group>"; };
 		7F9C2D5ACEBF58DBC93DD2AEC2AAF844 /* Pods-iLogger_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iLogger_Tests-Info.plist"; sourceTree = "<group>"; };
 		931ACE786C805B85498369E35F403D20 /* Pods-iLogger_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iLogger_Tests-dummy.m"; sourceTree = "<group>"; };
-		993DD9FB2216844500912C9F /* ILLoger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ILLoger.swift; path = iLogger/Classes/ILLoger.swift; sourceTree = "<group>"; };
+		993DD9FB2216844500912C9F /* ILLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ILLogger.swift; path = iLogger/Classes/ILLogger.swift; sourceTree = "<group>"; };
+		997079CE22232A7000587176 /* ILLogTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ILLogTag.swift; path = iLogger/Classes/ILLogTag.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A08ADF24A65CBECEE0E2FCB6F0D08194 /* Pods-iLogger_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iLogger_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A575055717F9923C01F1C32037FA3CC1 /* iLogger-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iLogger-umbrella.h"; sourceTree = "<group>"; };
@@ -145,7 +147,8 @@
 		542F87F85C256A641515F61CFFC871F3 /* iLogger */ = {
 			isa = PBXGroup;
 			children = (
-				993DD9FB2216844500912C9F /* ILLoger.swift */,
+				993DD9FB2216844500912C9F /* ILLogger.swift */,
+				997079CE22232A7000587176 /* ILLogTag.swift */,
 				904DAB719053F9C9C31872CF4BF3D930 /* Pod */,
 				BF4976DBFB7ECD09122B7233B5EB6A38 /* Support Files */,
 			);
@@ -372,8 +375,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				997079CF22232A7000587176 /* ILLogTag.swift in Sources */,
 				6661D506086E1778FA8C61985AA4014F /* iLogger-dummy.m in Sources */,
-				993DD9FC2216844500912C9F /* ILLoger.swift in Sources */,
+				993DD9FC2216844500912C9F /* ILLogger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

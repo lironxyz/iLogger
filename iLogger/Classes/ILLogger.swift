@@ -1,5 +1,5 @@
 //
-//  ILLoger.swift
+//  ILLogger.swift
 //  iLogger
 //
 //  Created by Liron on 15/02/2019.
@@ -18,34 +18,34 @@ public class ILLogger {
         isEnabled = true
     }
     
-    func log(_ message: String) {
+    func log(_ message: String, tag: ILLogTag) {
         if isEnabled {
-            print(message)
+            print("[\(tag.identifier)] \(message)")
         }
     }
     
     public func verbose(_ message: String) {
-        log("[VERBOSE] " + message)
+        log(message, tag: .verbose)
     }
     
     public func debug(_ message: String) {
-        log("[DEBUG] " + message)
+        log(message, tag: .debug)
     }
     
     public func info(_ message: String) {
-        log("[INFO] " + message)
+        log(message, tag: .info)
     }
     
     public func warning(_ message: String) {
-        log("[WARNING] " + message)
+        log(message, tag: .warning)
     }
     
     public func error(_ message: String) {
-        log("[ERROR] " + message)
+        log(message, tag: .error)
     }
     
     public func fatal(_ message: String) {
-        log("[FATAL] " + message)
+        log(message, tag: .fatal)
     }
     
 }
