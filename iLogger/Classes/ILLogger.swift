@@ -12,15 +12,21 @@ public class ILLogger {
     // MARK - Properties
     /// A flag indicates whether this logger enabled or not.
     /// Default is 'true'.
-    var isEnabled: Bool
+    public var isEnabled: Bool
+    /// A Set of tags that will be logged.
+    /// Defaults are [.verbose, .debug, .info, .warning, .error, .fatal].
+    public var enabledTags: Set<ILLogTag>
     
     public init() {
         isEnabled = true
+        enabledTags = Set<ILLogTag>([.verbose, .debug, .info, .warning, .error, .fatal])
     }
     
     func log(_ message: String, tag: ILLogTag) {
         if isEnabled {
-            print("[\(tag.identifier)] \(message)")
+            if enabledTags.contains(tag) {
+                print("[\(tag.identifier)] \(message)")
+            }
         }
     }
     
