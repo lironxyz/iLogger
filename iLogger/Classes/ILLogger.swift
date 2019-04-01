@@ -17,16 +17,26 @@ public class ILLogger {
     /// Defaults are [.verbose, .debug, .info, .warning, .error, .fatal].
     public var enabledTags: Set<ILLogTag>
     
-    public init() {
+    private let loggingQueue: DispatchQueue?
+    
+    public init(queue: DispatchQueue? = nil) {
         isEnabled = true
         enabledTags = Set<ILLogTag>([.verbose, .debug, .info, .warning, .error, .fatal])
+        loggingQueue = queue
     }
-    
+
     func log(_ message: String, tag: ILLogTag) {
-        if isEnabled {
-            if enabledTags.contains(tag) {
-                print("[\(tag.identifier)] \(message)")
-            }
+        let logBlock = {
+            guard self.isEnabled else { return }
+            guard self.enabledTags.contains(tag) else { return }
+            let output = "[\(tag.identifier)] \(message)"
+            print(output)
+        }
+        
+        if let queue = self.loggingQueue {
+            queue.async(execute: logBlock)
+        } else {
+            logBlock()
         }
     }
     
