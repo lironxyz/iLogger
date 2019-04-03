@@ -17,7 +17,7 @@ public class ILLogger {
     /// Defaults are [.verbose, .debug, .info, .warning, .error, .fatal].
     public var enabledTags: Set<ILLogTag>
     
-    private let loggingQueue: DispatchQueue?
+    internal let loggingQueue: DispatchQueue?
     
     public init(queue: DispatchQueue? = nil) {
         isEnabled = true

@@ -1,28 +1,24 @@
 import XCTest
-import iLogger
+@testable import iLogger
 
 class Tests: XCTestCase {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testLoggerDefaultInitializer() {
+        let logger = ILLogger()
+        
+        XCTAssert(logger.isEnabled, "logger should be enabled by default")
+        
+        let defaultTags = Set<ILLogTag>([.verbose, .debug, .info, .warning, .error, .fatal])
+        XCTAssert(logger.enabledTags.elementsEqual(defaultTags), "enabled logging tags should be: [.verbose, .debug, .info, .warning, .error, .fatal]")
+        
+        XCTAssert(logger.loggingQueue == nil, "logging queue should be nil by default")
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure() {
-            // Put the code you want to measure the time of here.
-        }
+    func testLoggerInitializerWithInjectedQueue() {
+        let injectedQueue = DispatchQueue(label: "test.queue")
+        let logger = ILLogger(queue: injectedQueue)
+        
+        XCTAssert(logger.loggingQueue == injectedQueue, "logging queue should be equal to the injected queue")
     }
     
 }
